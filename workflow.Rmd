@@ -1,30 +1,47 @@
 ---
-title: "workflow"
+title: "Workflow"
 author: "Bill Chung"
-date: "12/28/2021"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(installr)
 ```
 
-## R Markdown
+[Happy Git](https://happygitwithr.com/big-picture.html) <br>
+[R Conference](https://www.rstudio.com/resources/webinars/)
+# Workflow
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+|Steps | Actions |
+|:---:|:---:|
+|Create github repository| You can` fork` or create your `Gibhub`|
+|Clone the `Github` to local computer | recommend using github `desktop` |
+|Set up| Make the local `git repository` as an `RStuio Project`|
+|Commit |Instead of only saving individual files, periodically make a `commit` |
+|Push   | Push commits to Github periodically|
+|Merge  | If you are working with multiple members |
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+- Check your R version and update 
 
-```{r cars}
-summary(cars)
+```{md}
+R.version.string
+#> [1] "R version 4.1.2 (2021-11-01)"
+
+install.packages("installr")
+
+library(installr)
+
+updateR()
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
+- Create Personal Access Token (PAT)[LINK](https://happygitwithr.com/https-pat.html)
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+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
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Special features of Github
+
+- `Issues` : This is the bug tracker
+- `Pull requests` : A pull request is a formal proposal that says 'Here are some chagnes I would like to make'
